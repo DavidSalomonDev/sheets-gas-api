@@ -1,0 +1,23 @@
+{
+	"name": "sheets-gas-api",
+	"version": "1.0.0",
+	"description": "Creating a JSON from a Spreadsheet",
+	"scripts": {
+		"glogin": "clasp login",
+		"glogout": "clasp logout",
+		"gcreate": "clasp create --title 'sheets-gas-api' --rootDir ./dist",
+		"gclone": "clasp clone --title <id> --rootDir ./dist",
+		"gpull": "clasp pull",
+		"gpush": "clasp push",
+		"gstart": "clasp push --watch",
+		"start": "parcel build main.js --no-source-maps"
+	},
+	"author": "davidsalomon",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/google-apps-script": "^1.0.55",
+		"clasp": "^1.0.0",
+		"parcel": "^2.7.0",
+		"parcel-optimizer-gas": "^1.0.3"
+	}
+}
